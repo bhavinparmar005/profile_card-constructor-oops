@@ -2,123 +2,139 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "roboto",sans-serif;
+  font-family: "roboto", sans-serif;
 }
-:root{
+
+:root {
   --main-color: rgb(255, 23, 86);
+  --color2: rgb(46, 144, 213);
+  --color3: rgb(145, 71, 175);
+  --color4: rgb(24, 182, 87);
+  --color5: rgb(245, 190, 52);
+  --color6: rgb(232, 92, 13);
 }
+
 .main_container {
   width: 100%;
-  height: 100vh;
+  height: auto;
   background: linear-gradient(45deg, #e72c63 0%, #8a3bd1 100%);
-  
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
+}
 
-}
-.card{
-    width: 340px;
-    height: 500px;
-    /* background-color:orange; */
-    background-color: rgb(255, 255, 255);
-   
-    border-radius: 25px;
-    overflow: hidden;
-}
-.profile_section{
-    width: 100%;
-    height: 130px;
-    
-    background-color: var(--main-color);
-    display: flex;
-    justify-content: center;
-}
-.roung_img_main{
-    width: 130px;
-    height: 130px;
-    border: 8px solid white;
-    border-radius: 100%;
-    transform: translateY(50%);
-    box-shadow: -2px 0px 20px 2px  var(--main-color);
+.card {
+  width: 340px;
+  height: 500px;
+  /* background-color:orange; */
+  background-color: rgb(255, 255, 255);
 
-    overflow: hidden;
+  border-radius: 25px;
+  overflow: hidden;
+  margin-top: 46px;
+  margin-bottom: 46px;
 }
-.img{
+
+.profile_section {
+  width: 100%;
+  height: 130px;
+
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: center;
+}
+
+.roung_img_main {
+  width: 130px;
+  height: 130px;
+  border: 8px solid white;
+  border-radius: 100%;
+  transform: translateY(50%);
+  box-shadow: -2px 0px 20px 2px var(--main-color);
+
+  overflow: hidden;
+}
+
+.img {
   width: 100%;
   height: 100%;
 }
-.content_main_container{
+
+.content_main_container {
   width: 100%;
   height: 170px;
   /* border: 1px solid rgb(47, 133, 91); */
   display: flex;
   justify-content: center;
-  align-items: end; 
+  align-items: end;
 }
-.content{
+
+.content {
   width: 100%;
   height: 90px;
-
 }
-.content > h2{
+
+.content > h2 {
   color: var(--main-color);
   text-align: center;
   font-weight: 700;
   line-height: 2.2rem;
-
 }
-.content >p{
+
+.content > p {
   text-align: center;
   font-size: 1.3rem;
-  
 }
 
-.social_networking_main{
+.social_networking_main {
   width: 100%;
   height: 75px;
   /* border: 1px solid black; */
   display: flex;
   justify-content: space-between;
 }
-.followers{
-  width: 160px;
-  height: 100%;
-  /* border: 1px solid red; */
 
-}
-.following{
+.followers {
   width: 160px;
   height: 100%;
   /* border: 1px solid red; */
 }
-.followers >h1{
-text-align: center;
-font-weight: 800;
-}
-.followers >p{
-  text-align: center;
-  font-size: 1.3rem;
-  text-align: center; 
-  color: var(--main-color);
-  font-weight: 600;
-  margin-top: 5px;
+
+.following {
+  width: 160px;
+  height: 100%;
+  /* border: 1px solid red; */
 }
 
-.following >h1{
+.followers > h1 {
   text-align: center;
   font-weight: 800;
 }
-.following>p{
+
+.followers > p {
+  text-align: center;
   font-size: 1.3rem;
-  text-align: center; 
+  text-align: center;
   color: var(--main-color);
   font-weight: 600;
   margin-top: 5px;
 }
 
-.button_main{
+.following > h1 {
+  text-align: center;
+  font-weight: 800;
+}
+
+.following > p {
+  font-size: 1.3rem;
+  text-align: center;
+  color: var(--main-color);
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.button_main {
   width: 100%;
   height: 60px;
   /* border: 1px solid orange; */
@@ -126,7 +142,8 @@ font-weight: 800;
   align-items: end;
   justify-content: space-evenly;
 }
-.left_button{
+
+.left_button {
   width: 140px;
   height: 40px;
   border: 2px solid red;
@@ -140,7 +157,8 @@ font-weight: 800;
   font-weight: 600;
   transition: all 0.5s ease-in-out;
 }
-.right_button{
+
+.right_button {
   width: 140px;
   height: 40px;
   border: 2px solid var(--main-color);
@@ -153,47 +171,83 @@ font-weight: 800;
   font-weight: 600;
   transition: all 0.5s ease-in-out;
 }
-.left_button:hover{
+
+.left_button:hover {
   background-color: white;
   color: var(--main-color);
 }
-.right_button:hover{
-  background-color:var(--main-color);
+
+.right_button:hover {
+  background-color: var(--main-color);
   color: white;
 }
 
-.color_change{
-  
+.color_change {
   width: 100%;
   height: 50px;
   /* border: 1px solid red; */
-margin-top: 12px;
-display: flex;
-align-items: center;
-justify-content: space-evenly;
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
-.color{
+
+.color {
   width: 30px;
- height: 30px;
- border-radius: 100%;
-
-}
-#color1{
-  background-color:rgb(255, 16, 81) ;
-}
-#color2{
-  background-color: rgb(46, 144, 213);
+  height: 30px;
+  border-radius: 100%;
 }
 
-#color3{
-  background-color: rgb(145, 71, 175);
+#color1 {
+  background-color: var(--main-color);
+  transition: all 0.2s ease-in;
 }
 
-#color4{
-  background-color: rgb(24, 182, 87);
+#color2 {
+  background-color: var(--color2);
+  transition: all 0.2s ease-in;
 }
 
-#color5{
-  background-color: rgb(245, 190, 52);
+#color3 {
+  background-color: var(--color3);
+  transition: all 0.2s ease-in;
 }
 
+#color4 {
+  background-color: var(--color4);
+  transition: all 0.2s ease-in;
+}
+
+#color5 {
+  background-color: var(--color5);
+  transition: all 0.2s ease-in;
+}
+
+#color6 {
+  background-color: var(--color6);
+  transition: all 0.2s ease-in;
+}
+
+#color1:hover {
+  box-shadow: -2px 0px 20px 2px var(--main-color);
+}
+
+#color2:hover {
+  box-shadow: -2px 0px 20px 2px var(--color2);
+}
+
+#color3:hover {
+  box-shadow: -2px 0px 20px 2px var(--color3);
+}
+
+#color4:hover {
+  box-shadow: -2px 0px 20px 2px var(--color4);
+}
+
+#color5:hover {
+  box-shadow: -2px 0px 20px 2px var(--color5);
+}
+
+#color6:hover {
+  box-shadow: -2px 0px 20px 2px var(--color6);
+}
