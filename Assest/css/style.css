@@ -75,7 +75,7 @@
   height: 90px;
 }
 
-.content > h2 {
+.user_name {
   color: var(--main-color);
   text-align: center;
   font-weight: 700;
@@ -112,7 +112,7 @@
   font-weight: 800;
 }
 
-.followers > p {
+.follower_p_color {
   text-align: center;
   font-size: 1.3rem;
   text-align: center;
@@ -126,7 +126,7 @@
   font-weight: 800;
 }
 
-.following > p {
+.following_p_color {
   font-size: 1.3rem;
   text-align: center;
   color: var(--main-color);
@@ -146,7 +146,7 @@
 .left_button {
   width: 140px;
   height: 40px;
-  border: 2px solid red;
+  border: 2px solid var(--main-color);
   border-radius: 30px;
   background-color: var(--main-color);
   color: white;
@@ -172,7 +172,8 @@
   transition: all 0.5s ease-in-out;
 }
 
-.left_button:hover {
+
+/* .left_button:hover {
   background-color: white;
   color: var(--main-color);
 }
@@ -180,7 +181,7 @@
 .right_button:hover {
   background-color: var(--main-color);
   color: white;
-}
+} */
 
 .color_change {
   width: 100%;
@@ -192,23 +193,28 @@
   justify-content: space-evenly;
 }
 
-.color {
+.color1{
   width: 30px;
   height: 30px;
   border-radius: 100%;
-}
-
-#color1 {
   background-color: var(--main-color);
   transition: all 0.2s ease-in;
 }
 
-#color2 {
+
+
+.color2 {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
   background-color: var(--color2);
   transition: all 0.2s ease-in;
 }
 
-#color3 {
+.color3 {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
   background-color: var(--color3);
   transition: all 0.2s ease-in;
 }
@@ -228,15 +234,15 @@
   transition: all 0.2s ease-in;
 }
 
-#color1:hover {
+.color1:hover {
   box-shadow: -2px 0px 20px 2px var(--main-color);
 }
 
-#color2:hover {
+.color2:hover {
   box-shadow: -2px 0px 20px 2px var(--color2);
 }
 
-#color3:hover {
+.color3:hover {
   box-shadow: -2px 0px 20px 2px var(--color3);
 }
 
@@ -251,3 +257,14 @@
 #color6:hover {
   box-shadow: -2px 0px 20px 2px var(--color6);
 }
+
+/* .onclick_color_change_background_color2{
+background-color: var(--color2);
+}
+
+.onclick_color_change_box_shadow_color2{
+  box-shadow: -2px 0px 20px 2px var(--color2);
+}
+.onclick_color_change_fontcolor_color2{
+color: var(--color2);
+} */

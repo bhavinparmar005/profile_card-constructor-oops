@@ -57,62 +57,8 @@ let user_profile_data = [
     "Following",
     "Follow",
     "Message"
-  ),
-  new Userdata(
-    "./Assest/image/user2.jpg",
-    "Emily Fisher",
-    "Senior Web Developer",
-    "1.6K",
-    "Followers",
-    "852",
-    "Following",
-    "Follow",
-    "Message"
-  ),
-  new Userdata(
-    "./Assest/image/user2.jpg",
-    "Emily Fisher",
-    "Senior Web Developer",
-    "1.6K",
-    "Followers",
-    "852",
-    "Following",
-    "Follow",
-    "Message"
-  ),
-  new Userdata(
-    "./Assest/image/user2.jpg",
-    "Emily Fisher",
-    "Senior Web Developer",
-    "1.6K",
-    "Followers",
-    "852",
-    "Following",
-    "Follow",
-    "Message"
-  ),
-  new Userdata(
-    "./Assest/image/user2.jpg",
-    "Emily Fisher",
-    "Senior Web Developer",
-    "1.6K",
-    "Followers",
-    "852",
-    "Following",
-    "Follow",
-    "Message"
-  ),
-  new Userdata(
-    "./Assest/image/user2.jpg",
-    "Emily Fisher",
-    "Senior Web Developer",
-    "1.6K",
-    "Followers",
-    "852",
-    "Following",
-    "Follow",
-    "Message"
-  ),
+  )
+ 
 ];
 
 user_profile_data.forEach((value) => {
@@ -157,6 +103,7 @@ user_profile_data.forEach((value) => {
 
   // creat a h2
   let h2 = document.createElement("h2");
+  h2.className = 'user_name';
   h2.textContent = value.user_name;
   // h2 append to content
   content.appendChild(h2);
@@ -189,6 +136,7 @@ user_profile_data.forEach((value) => {
 
   let followers_p = document.createElement("p");
   followers_p.textContent = value.user_followers_text;
+  followers_p.className = 'follower_p_color';
   // followers_p append to followers
   followers.appendChild(followers_p);
 
@@ -207,6 +155,7 @@ user_profile_data.forEach((value) => {
   //creat a p tag
   let following_p = document.createElement("p");
   following_p.textContent = value.user_following_text;
+  following_p.className = 'following_p_color';
   // following_p append to followers
   following.appendChild(following_p);
 
@@ -238,43 +187,108 @@ user_profile_data.forEach((value) => {
 
   // creat a color1 div
   let color1 = document.createElement("div");
-  color1.className = "color";
-  color1.id = "color1";
+  color1.className = "color1";
+  
   // color1 append to color_change
   color_change.appendChild(color1);
 
   // creat a color1 div
   let color2 = document.createElement("div");
-  color2.className = "color";
-  color2.id = "color2";
+  color2.className = "color2";
+ 
   // color2 append to color_change
   color_change.appendChild(color2);
 
   // creat a color3 div
   let color3 = document.createElement("div");
-  color3.className = "color";
-  color3.id = "color3";
+  color3.className = "color3";
+ 
   // color3 append to color_change
   color_change.appendChild(color3);
 
   // creat a color4 div
   let color4 = document.createElement("div");
-  color4.className = "color";
-  color4.id = "color4";
+  color4.className = "color4";
+  
   // color4 append to color_change
   color_change.appendChild(color4);
 
   // creat a color5 div
   let color5 = document.createElement("div");
-  color5.className = "color";
-  color5.id = "color5";
+  color5.className = "color5";
+
   // color5  append to color_change
   color_change.appendChild(color5);
 
   // creat a color6 div
   let color6 = document.createElement("div");
-  color6.className = "color";
-  color6.id = "color6";
+  color6.className = "color6";
+
   // color6  append to color_change
   color_change.appendChild(color6);
+});
+
+
+let color1 = document.querySelector('.color1');
+let color2 = document.querySelector('.color2');
+let color3 = document.querySelector('.color3');
+let color4 = document.querySelector('.color4');
+let color5 = document.querySelector('.color5');
+let color6 = document.querySelector('.color6');
+
+let background = document.querySelector('.profile_section');
+let box_shadow = document.querySelector('.roung_img_main');
+let user_name = document.querySelector('.user_name');
+let follower_p_color = document.querySelector('.follower_p_color');
+let following_p_color = document.querySelector('.following_p_color');
+let left_button_color = document.querySelector('.left_button');
+let right_button_color = document.querySelector('.right_button');
+
+
+
+color1.addEventListener('click', () => {
+
+  background.style.backgroundColor = " rgb(255, 23, 86)";
+  box_shadow.style.boxShadow = "-2px 0px 20px 2px rgb(255, 23, 86)";
+  user_name.style.color = " rgb(255, 23, 86)";
+  follower_p_color.style.color = "rgb(255, 23, 86)";
+  following_p_color.style.color = "rgb(255, 23, 86)";
+  left_button_color.style.backgroundColor = " rgb(255, 23, 86)";
+  left_button_color.style.border = "2px solid rgb(255, 23, 86)";
+  right_button_color.style.border = "2px solid rgb(255, 23, 86)";
+  right_button_color.style.color = "rgb(255, 23, 86)";
+
+
+
+});
+
+
+
+
+color2.addEventListener('click', () => {
+
+  background.style.backgroundColor = " rgb(46, 144, 213)";
+  box_shadow.style.boxShadow = "-2px 0px 20px 2px rgb(46, 144, 213)";
+  user_name.style.color = " rgb(46, 144, 213)";
+  follower_p_color.style.color = "rgb(46, 144, 213)";
+  following_p_color.style.color = "rgb(46, 144, 213)";
+  left_button_color.style.backgroundColor = " rgb(46, 144, 213)";
+  left_button_color.style.border = "2px solid rgb(46, 144, 213)";
+  right_button_color.style.border = "2px solid rgb(46, 144, 213)";
+  right_button_color.style.color = " rgb(46, 144, 213)";
+
+});
+
+color3.addEventListener('click', () => {
+
+  background.style.backgroundColor = " rgb(145, 71, 175)";
+  box_shadow.style.boxShadow = "-2px 0px 20px 2px rgb(145, 71, 175)";
+  user_name.style.color = " rgb(145, 71, 175)";
+  follower_p_color.style.color = "rgb(145, 71, 175)";
+  following_p_color.style.color = "rgb(145, 71, 175)";
+  left_button_color.style.backgroundColor = " rgb(145, 71, 175)";
+  left_button_color.style.border = "2px solid rgb(145, 71, 175)";
+  right_button_color.style.border = "2px solid rgb(145, 71, 175)";
+  right_button_color.style.color = " rgb(145, 71, 175)";
+
 });
