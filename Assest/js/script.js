@@ -57,29 +57,7 @@ let user_profile_data = [
     "Following",
     "Follow",
     "Message"
-  ),
-  new Userdata(
-    "./Assest/image/user3.jpg",
-    "Emily Fisher",
-    "Senior Web Developer",
-    "1.6K",
-    "Followers",
-    "852",
-    "Following",
-    "Follow",
-    "Message"
-  ),
-  new Userdata(
-    "./Assest/image/user4.avif",
-    "Emily Fisher",
-    "Senior Web Developer",
-    "1.6K",
-    "Followers",
-    "852",
-    "Following",
-    "Follow",
-    "Message"
-  ),
+  )
 
  
 ];
@@ -249,6 +227,21 @@ user_profile_data.forEach((value) => {
 
   // color6  append to color_change
   color_change.appendChild(color6);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 });
 
 
