@@ -57,7 +57,30 @@ let user_profile_data = [
     "Following",
     "Follow",
     "Message"
-  )
+  ),
+  new Userdata(
+    "./Assest/image/user3.jpg",
+    "Emily Fisher",
+    "Senior Web Developer",
+    "1.6K",
+    "Followers",
+    "852",
+    "Following",
+    "Follow",
+    "Message"
+  ),
+  new Userdata(
+    "./Assest/image/user4.avif",
+    "Emily Fisher",
+    "Senior Web Developer",
+    "1.6K",
+    "Followers",
+    "852",
+    "Following",
+    "Follow",
+    "Message"
+  ),
+
  
 ];
 
@@ -290,5 +313,49 @@ color3.addEventListener('click', () => {
   left_button_color.style.border = "2px solid rgb(145, 71, 175)";
   right_button_color.style.border = "2px solid rgb(145, 71, 175)";
   right_button_color.style.color = " rgb(145, 71, 175)";
+
+});
+
+
+color4.addEventListener('click', () => {
+
+  background.style.backgroundColor = " rgb(24, 182, 87)";
+  box_shadow.style.boxShadow = "-2px 0px 20px 2px rgb(24, 182, 87)";
+  user_name.style.color = " rgb(24, 182, 87)";
+  follower_p_color.style.color = "rgb(24, 182, 87)";
+  following_p_color.style.color = "rgb(24, 182, 87)";
+  left_button_color.style.backgroundColor = " rgb(24, 182, 87)";
+  left_button_color.style.border = "2px solid rgb(24, 182, 87)";
+  right_button_color.style.border = "2px solid rgb(24, 182, 87)";
+  right_button_color.style.color = " rgb(24, 182, 87)";
+
+});
+
+
+color5.addEventListener('click', () => {
+
+  background.style.backgroundColor = "  rgb(245, 190, 52)";
+  box_shadow.style.boxShadow = "-2px 0px 20px 2px  rgb(245, 190, 52)";
+  user_name.style.color = "  rgb(245, 190, 52)";
+  follower_p_color.style.color = " rgb(245, 190, 52)";
+  following_p_color.style.color = " rgb(245, 190, 52)";
+  left_button_color.style.backgroundColor = "  rgb(245, 190, 52)";
+  left_button_color.style.border = "2px solid  rgb(245, 190, 52)";
+  right_button_color.style.border = "2px solid  rgb(245, 190, 52)";
+  right_button_color.style.color = "  rgb(245, 190, 52)";
+
+});
+
+color6.addEventListener('click', () => {
+
+  background.style.backgroundColor = "  rgb(232, 92, 13)";
+  box_shadow.style.boxShadow = "-2px 0px 20px 2px  rgb(232, 92, 13)";
+  user_name.style.color = "  rgb(232, 92, 13)";
+  follower_p_color.style.color = " rgb(232, 92, 13)";
+  following_p_color.style.color = " rgb(232, 92, 13)";
+  left_button_color.style.backgroundColor = "  rgb(232, 92, 13)";
+  left_button_color.style.border = "2px solid  rgb(232, 92, 13)";
+  right_button_color.style.border = "2px solid  rgb(232, 92, 13)";
+  right_button_color.style.color = "  rgb(232, 92, 13)";
 
 });

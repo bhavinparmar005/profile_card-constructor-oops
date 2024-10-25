@@ -219,17 +219,26 @@
   transition: all 0.2s ease-in;
 }
 
-#color4 {
+.color4 {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
   background-color: var(--color4);
   transition: all 0.2s ease-in;
 }
 
-#color5 {
+.color5 {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
   background-color: var(--color5);
   transition: all 0.2s ease-in;
 }
 
-#color6 {
+.color6 {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
   background-color: var(--color6);
   transition: all 0.2s ease-in;
 }
@@ -246,15 +255,15 @@
   box-shadow: -2px 0px 20px 2px var(--color3);
 }
 
-#color4:hover {
+.color4:hover {
   box-shadow: -2px 0px 20px 2px var(--color4);
 }
 
-#color5:hover {
+.color5:hover {
   box-shadow: -2px 0px 20px 2px var(--color5);
 }
 
-#color6:hover {
+.color6:hover {
   box-shadow: -2px 0px 20px 2px var(--color6);
 }
 
