@@ -16,7 +16,7 @@
 
 .main_container {
   width: 100%;
-  height: 100vh;
+  height: auto;
   background: linear-gradient(45deg, #e72c63 0%, #8a3bd1 100%);
   display: flex;
   justify-content: space-evenly;
@@ -85,6 +85,7 @@
 .content > p {
   text-align: center;
   font-size: 1.3rem;
+ 
 }
 
 .social_networking_main {
@@ -109,7 +110,7 @@
 
 .followers > h1 {
   text-align: center;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .follower_p_color {
@@ -123,7 +124,7 @@
 
 .following > h1 {
   text-align: center;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .following_p_color {

@@ -38,7 +38,6 @@ function Userdata(
   this.user_name = user_name;
   this.user_job_fild = user_job_fild;
   this.user_followers_number = user_followers_number;
-
   this.user_followers_text = user_followers_text;
   this.user_following_number = user_following_number;
   this.user_following_text = user_following_text;
@@ -48,22 +47,44 @@ function Userdata(
 
 let user_profile_data = [
   new Userdata(
-    "./Assest/image/user2.jpg",
-    "Emily Fisher",
+    "./Assest/image/profile2.avif",
+    "Emma Evans",
     "Senior Web Developer",
+    "4.2K",
+    "Followers",
+    "350",
+    "Following",
+    "Follow",
+    "Message"
+  ),
+  new Userdata(
+    "./Assest/image/user3.jpg",
+    "Lisa Wilson",
+    " Art Director",
+    "10.2K",
+    "Followers",
+    "2.1k",
+    "Following",
+    "Follow",
+    "Message"
+  ),
+  new Userdata(
+    "./Assest/image/user4.avif",
+    "Brie Larson",
+    "Front-end Developer",
     "1.6K",
     "Followers",
     "852",
     "Following",
     "Follow",
     "Message"
-  )
+  ),
 
- 
+
 ];
 
 user_profile_data.forEach((value) => {
-  console.log(main_container);
+  // console.log(main_container);
 
   //    creat card div
   let card = document.createElement("div");
@@ -184,171 +205,219 @@ user_profile_data.forEach((value) => {
   let color_change = document.createElement("div");
   color_change.className = "color_change";
   // color_change append to card
+
   card.appendChild(color_change);
 
-  // creat a color1 div
-  let color1 = document.createElement("div");
-  color1.className = "color1";
-  
-  // color1 append to color_change
-  color_change.appendChild(color1);
 
-  // creat a color1 div
-  let color2 = document.createElement("div");
-  color2.className = "color2";
- 
-  // color2 append to color_change
-  color_change.appendChild(color2);
+  // old code 
 
-  // creat a color3 div
-  let color3 = document.createElement("div");
-  color3.className = "color3";
- 
-  // color3 append to color_change
-  color_change.appendChild(color3);
+  // // creat a color1 div
+  // let color1 = document.createElement("div");
+  // color1.className = "color1";
 
-  // creat a color4 div
-  let color4 = document.createElement("div");
-  color4.className = "color4";
-  
-  // color4 append to color_change
-  color_change.appendChild(color4);
+  // // color1 append to color_change
+  // color_change.appendChild(color1);
 
-  // creat a color5 div
-  let color5 = document.createElement("div");
-  color5.className = "color5";
+  // // creat a color1 div
+  // let color2 = document.createElement("div");
+  // color2.className = "color2";
 
-  // color5  append to color_change
-  color_change.appendChild(color5);
+  // // color2 append to color_change
+  // color_change.appendChild(color2);
 
-  // creat a color6 div
-  let color6 = document.createElement("div");
-  color6.className = "color6";
+  // // creat a color3 div
+  // let color3 = document.createElement("div");
+  // color3.className = "color3";
 
-  // color6  append to color_change
-  color_change.appendChild(color6);
+  // // color3 append to color_change
+  // color_change.appendChild(color3);
 
+  // // creat a color4 div
+  // let color4 = document.createElement("div");
+  // color4.className = "color4";
 
+  // // color4 append to color_change
+  // color_change.appendChild(color4);
 
+  // // creat a color5 div
+  // let color5 = document.createElement("div");
+  // color5.className = "color5";
 
+  // // color5  append to color_change
+  // color_change.appendChild(color5);
 
+  // // creat a color6 div
+  // let color6 = document.createElement("div");
+  // color6.className = "color6";
+
+  // // color6  append to color_change
+  // color_change.appendChild(color6);
 
 
 
 
+  // old code 
+
+
+
+
+  // new code 
+
+
+  let color = ["color1", "color2", "color3", "color4", "color5", "color6"]
+
+
+  color.forEach(val => {
+    let color_div = document.createElement("div");
+    color_div.className = val;
+    console.log(color_div)
+    color_div.addEventListener("click", () => {
+
+      let colors = {
+        color1: "rgb(255, 23, 86)",
+        color2: "rgb(46, 144, 213)",
+        color3: "rgb(145, 71, 175)",
+        color4: "rgb(24, 182, 87)",
+        color5: "rgb(245, 190, 52)",
+        color6: "rgb(232, 92, 13)"
+
+      };
+
+      let color = colors[val];
+
+      profile_section.style.backgroundColor = color;
+      roung_img_main.style.boxShadow = `-2px 0px 20px 2px ${color}`;
+      h2.style.color = color;
+      followers_p.style.color = color;
+      following_p.style.color = color;
+      left_button.style.backgroundColor = color;
+      left_button.style.border = `2px solid ${color}`;
+      right_button.style.border = `2px solid ${color}`;
+      right_button.style.color = color;
+
+    });
+    color_change.appendChild(color_div);  
+
+  })
+
+  // new code 
 
 
 
 
 
-  
-});
-
-
-let color1 = document.querySelector('.color1');
-let color2 = document.querySelector('.color2');
-let color3 = document.querySelector('.color3');
-let color4 = document.querySelector('.color4');
-let color5 = document.querySelector('.color5');
-let color6 = document.querySelector('.color6');
-
-let background = document.querySelector('.profile_section');
-let box_shadow = document.querySelector('.roung_img_main');
-let user_name = document.querySelector('.user_name');
-let follower_p_color = document.querySelector('.follower_p_color');
-let following_p_color = document.querySelector('.following_p_color');
-let left_button_color = document.querySelector('.left_button');
-let right_button_color = document.querySelector('.right_button');
 
 
 
-color1.addEventListener('click', () => {
-
-  background.style.backgroundColor = " rgb(255, 23, 86)";
-  box_shadow.style.boxShadow = "-2px 0px 20px 2px rgb(255, 23, 86)";
-  user_name.style.color = " rgb(255, 23, 86)";
-  follower_p_color.style.color = "rgb(255, 23, 86)";
-  following_p_color.style.color = "rgb(255, 23, 86)";
-  left_button_color.style.backgroundColor = " rgb(255, 23, 86)";
-  left_button_color.style.border = "2px solid rgb(255, 23, 86)";
-  right_button_color.style.border = "2px solid rgb(255, 23, 86)";
-  right_button_color.style.color = "rgb(255, 23, 86)";
-
-
-
-});
-
-
-
-
-color2.addEventListener('click', () => {
-
-  background.style.backgroundColor = " rgb(46, 144, 213)";
-  box_shadow.style.boxShadow = "-2px 0px 20px 2px rgb(46, 144, 213)";
-  user_name.style.color = " rgb(46, 144, 213)";
-  follower_p_color.style.color = "rgb(46, 144, 213)";
-  following_p_color.style.color = "rgb(46, 144, 213)";
-  left_button_color.style.backgroundColor = " rgb(46, 144, 213)";
-  left_button_color.style.border = "2px solid rgb(46, 144, 213)";
-  right_button_color.style.border = "2px solid rgb(46, 144, 213)";
-  right_button_color.style.color = " rgb(46, 144, 213)";
-
-});
-
-color3.addEventListener('click', () => {
-
-  background.style.backgroundColor = " rgb(145, 71, 175)";
-  box_shadow.style.boxShadow = "-2px 0px 20px 2px rgb(145, 71, 175)";
-  user_name.style.color = " rgb(145, 71, 175)";
-  follower_p_color.style.color = "rgb(145, 71, 175)";
-  following_p_color.style.color = "rgb(145, 71, 175)";
-  left_button_color.style.backgroundColor = " rgb(145, 71, 175)";
-  left_button_color.style.border = "2px solid rgb(145, 71, 175)";
-  right_button_color.style.border = "2px solid rgb(145, 71, 175)";
-  right_button_color.style.color = " rgb(145, 71, 175)";
 
 });
 
 
-color4.addEventListener('click', () => {
 
-  background.style.backgroundColor = " rgb(24, 182, 87)";
-  box_shadow.style.boxShadow = "-2px 0px 20px 2px rgb(24, 182, 87)";
-  user_name.style.color = " rgb(24, 182, 87)";
-  follower_p_color.style.color = "rgb(24, 182, 87)";
-  following_p_color.style.color = "rgb(24, 182, 87)";
-  left_button_color.style.backgroundColor = " rgb(24, 182, 87)";
-  left_button_color.style.border = "2px solid rgb(24, 182, 87)";
-  right_button_color.style.border = "2px solid rgb(24, 182, 87)";
-  right_button_color.style.color = " rgb(24, 182, 87)";
+// let color1 = document.querySelector('.color1');
+// let color2 = document.querySelector('.color2');
+// let color3 = document.querySelector('.color3');
+// let color4 = document.querySelector('.color4');
+// let color5 = document.querySelector('.color5');
+// let color6 = document.querySelector('.color6');
 
-});
+// let background = document.querySelector('.profile_section');
+// let box_shadow = document.querySelector('.roung_img_main');
+// let user_name = document.querySelector('.user_name');
+// let follower_p_color = document.querySelector('.follower_p_color');
+// let following_p_color = document.querySelector('.following_p_color');
+// let left_button_color = document.querySelector('.left_button');
+// let right_button_color = document.querySelector('.right_button');
 
 
-color5.addEventListener('click', () => {
 
-  background.style.backgroundColor = "  rgb(245, 190, 52)";
-  box_shadow.style.boxShadow = "-2px 0px 20px 2px  rgb(245, 190, 52)";
-  user_name.style.color = "  rgb(245, 190, 52)";
-  follower_p_color.style.color = " rgb(245, 190, 52)";
-  following_p_color.style.color = " rgb(245, 190, 52)";
-  left_button_color.style.backgroundColor = "  rgb(245, 190, 52)";
-  left_button_color.style.border = "2px solid  rgb(245, 190, 52)";
-  right_button_color.style.border = "2px solid  rgb(245, 190, 52)";
-  right_button_color.style.color = "  rgb(245, 190, 52)";
+// color1.addEventListener('click', () => {
 
-});
+//   background.style.backgroundColor = " rgb(255, 23, 86)";
+//   box_shadow.style.boxShadow = "-2px 0px 20px 2px rgb(255, 23, 86)";
+//   user_name.style.color = " rgb(255, 23, 86)";
+//   follower_p_color.style.color = "rgb(255, 23, 86)";
+//   following_p_color.style.color = "rgb(255, 23, 86)";
+//   left_button_color.style.backgroundColor = " rgb(255, 23, 86)";
+//   left_button_color.style.border = "2px solid rgb(255, 23, 86)";
+//   right_button_color.style.border = "2px solid rgb(255, 23, 86)";
+//   right_button_color.style.color = "rgb(255, 23, 86)";
 
-color6.addEventListener('click', () => {
 
-  background.style.backgroundColor = "  rgb(232, 92, 13)";
-  box_shadow.style.boxShadow = "-2px 0px 20px 2px  rgb(232, 92, 13)";
-  user_name.style.color = "  rgb(232, 92, 13)";
-  follower_p_color.style.color = " rgb(232, 92, 13)";
-  following_p_color.style.color = " rgb(232, 92, 13)";
-  left_button_color.style.backgroundColor = "  rgb(232, 92, 13)";
-  left_button_color.style.border = "2px solid  rgb(232, 92, 13)";
-  right_button_color.style.border = "2px solid  rgb(232, 92, 13)";
-  right_button_color.style.color = "  rgb(232, 92, 13)";
 
-});
+// });
+
+
+
+
+// color2.addEventListener('click', () => {
+
+//   background.style.backgroundColor = " rgb(46, 144, 213)";
+//   box_shadow.style.boxShadow = "-2px 0px 20px 2px rgb(46, 144, 213)";
+//   user_name.style.color = " rgb(46, 144, 213)";
+//   follower_p_color.style.color = "rgb(46, 144, 213)";
+//   following_p_color.style.color = "rgb(46, 144, 213)";
+//   left_button_color.style.backgroundColor = " rgb(46, 144, 213)";
+//   left_button_color.style.border = "2px solid rgb(46, 144, 213)";
+//   right_button_color.style.border = "2px solid rgb(46, 144, 213)";
+//   right_button_color.style.color = " rgb(46, 144, 213)";
+
+// });
+
+// color3.addEventListener('click', () => {
+
+//   background.style.backgroundColor = " rgb(145, 71, 175)";
+//   box_shadow.style.boxShadow = "-2px 0px 20px 2px rgb(145, 71, 175)";
+//   user_name.style.color = " rgb(145, 71, 175)";
+//   follower_p_color.style.color = "rgb(145, 71, 175)";
+//   following_p_color.style.color = "rgb(145, 71, 175)";
+//   left_button_color.style.backgroundColor = " rgb(145, 71, 175)";
+//   left_button_color.style.border = "2px solid rgb(145, 71, 175)";
+//   right_button_color.style.border = "2px solid rgb(145, 71, 175)";
+//   right_button_color.style.color = " rgb(145, 71, 175)";
+
+// });
+
+
+// color4.addEventListener('click', () => {
+
+//   background.style.backgroundColor = " rgb(24, 182, 87)";
+//   box_shadow.style.boxShadow = "-2px 0px 20px 2px rgb(24, 182, 87)";
+//   user_name.style.color = " rgb(24, 182, 87)";
+//   follower_p_color.style.color = "rgb(24, 182, 87)";
+//   following_p_color.style.color = "rgb(24, 182, 87)";
+//   left_button_color.style.backgroundColor = " rgb(24, 182, 87)";
+//   left_button_color.style.border = "2px solid rgb(24, 182, 87)";
+//   right_button_color.style.border = "2px solid rgb(24, 182, 87)";
+//   right_button_color.style.color = " rgb(24, 182, 87)";
+
+// });
+
+
+// color5.addEventListener('click', () => {
+
+//   background.style.backgroundColor = "  rgb(245, 190, 52)";
+//   box_shadow.style.boxShadow = "-2px 0px 20px 2px  rgb(245, 190, 52)";
+//   user_name.style.color = "  rgb(245, 190, 52)";
+//   follower_p_color.style.color = " rgb(245, 190, 52)";
+//   following_p_color.style.color = " rgb(245, 190, 52)";
+//   left_button_color.style.backgroundColor = "  rgb(245, 190, 52)";
+//   left_button_color.style.border = "2px solid  rgb(245, 190, 52)";
+//   right_button_color.style.border = "2px solid  rgb(245, 190, 52)";
+//   right_button_color.style.color = "  rgb(245, 190, 52)";
+
+// });
+
+// color6.addEventListener('click', () => {
+
+//   background.style.backgroundColor = "  rgb(232, 92, 13)";
+//   box_shadow.style.boxShadow = "-2px 0px 20px 2px  rgb(232, 92, 13)";
+//   user_name.style.color = "  rgb(232, 92, 13)";
+//   follower_p_color.style.color = " rgb(232, 92, 13)";
+//   following_p_color.style.color = " rgb(232, 92, 13)";
+//   left_button_color.style.backgroundColor = "  rgb(232, 92, 13)";
+//   left_button_color.style.border = "2px solid  rgb(232, 92, 13)";
+//   right_button_color.style.border = "2px solid  rgb(232, 92, 13)";
+//   right_button_color.style.color = "  rgb(232, 92, 13)";
+
+// });
